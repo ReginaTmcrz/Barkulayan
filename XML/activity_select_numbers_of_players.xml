@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".selectNumbersOfPlayers">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="160dp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/title">
+
+        </ImageView>
+
+        <ImageButton
+            android:contentDescription="toback"
+            android:id="@+id/imageButton2"
+            android:layout_width="56dp"
+            android:layout_height="82dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="goToMainPage"
+            android:background="@drawable/backbtn"
+            app:srcCompat="@drawable/backbtn" />
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp">
+
+
+        <ImageButton
+            android:contentDescription="tosingleplayer"
+            android:id="@+id/singlePlayer"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginRight="5dp"
+            android:onClick="goToSinglePlayerPage"
+            android:background="@drawable/onepl"
+            android:text="Single Player" />
+
+        <ImageButton
+            android:contentDescription="totwoplayers"
+            android:id="@+id/twoPlayers"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="5dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:onClick="goToTwoPlayersPage"
+            android:background="@drawable/twopl"
+            android:text="Two Players" />
+
+        <ImageButton
+            android:contentDescription="tothreeplayers"
+            android:id="@+id/threePlayers"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:onClick="goToThreePlayersPage"
+            android:background="@drawable/threepl"
+            android:text="Three Players" />
+
+        <ImageButton
+            android:contentDescription="tofourplayers"
+            android:id="@+id/fourPlayers"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:onClick="goToFourPlayersPage"
+            android:background="@drawable/fourpl"
+            android:text="Four Players" />
+
+    </GridLayout>
+
+</LinearLayout>
